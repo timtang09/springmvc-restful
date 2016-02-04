@@ -16,6 +16,6 @@ public class IndexController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getIndexPage() {
-		return "UserManagement";
+		return "login";
 	}
 }
