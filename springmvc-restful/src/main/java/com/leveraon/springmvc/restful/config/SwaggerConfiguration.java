@@ -28,6 +28,7 @@ public class SwaggerConfiguration {
 		return new Docket(DocumentationType.SWAGGER_2).select().paths(paths()).build().apiInfo(apiInfo());
 	}
 
+	@SuppressWarnings("unchecked")
 	private Predicate<String> paths() {
 		return or(containsPattern("/user/*"));
 	}
