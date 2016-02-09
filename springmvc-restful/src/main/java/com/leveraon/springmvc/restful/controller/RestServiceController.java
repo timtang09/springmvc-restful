@@ -18,7 +18,7 @@ import com.leveraon.springmvc.restful.model.User;
 import com.leveraon.springmvc.restful.service.UserService;
 
 @RestController
-public class HelloWorldRestController {
+public class RestServiceController {
 	@Autowired
 	UserService userService; // Service which will do all data
 								// retrieval/manipulation work
