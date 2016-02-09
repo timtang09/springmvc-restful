@@ -20,8 +20,7 @@ public class LoggingInterceptor implements HandlerInterceptor {
 	}
 
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object object,
-			Exception model)
-			throws Exception {
+			Exception exception) throws Exception {
 
 		System.out.println("---Request Completed---");
 	}
