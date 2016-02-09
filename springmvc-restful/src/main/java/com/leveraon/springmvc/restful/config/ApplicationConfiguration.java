@@ -13,7 +13,7 @@ import com.leveraon.springmvc.restful.config.interceptor.TransactionInterceptor;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.leveraon.springmvc.restful")
-public class RESTServiceConfiguration extends WebMvcConfigurerAdapter {
+public class ApplicationConfiguration extends WebMvcConfigurerAdapter {
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {

@@ -4,11 +4,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-import com.leveraon.springmvc.restful.config.RESTServiceConfiguration;
+import com.leveraon.springmvc.restful.config.ApplicationConfiguration;
 
 @Configuration
 @ComponentScan
-@Import({ SecurityConfiguration.class, RESTServiceConfiguration.class })
+@Import({ SecurityConfiguration.class, ApplicationConfiguration.class })
 public class RootConfiguration {
 
 }
