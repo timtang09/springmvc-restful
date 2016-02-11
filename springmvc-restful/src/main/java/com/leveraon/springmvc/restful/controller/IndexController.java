@@ -12,14 +12,19 @@ public class IndexController {
 	public String getIndexPage() {
 		return "index";
 	}
-	
+
 	@RequestMapping(value = "/sign-in", method = RequestMethod.GET)
 	public String login() {
 		return "login";
 	}
-	
+
 	@RequestMapping(value = "/main", method = RequestMethod.POST)
 	public String main() {
 		return "index";
+	}
+
+	@RequestMapping(value = "/logout", method = RequestMethod.POST)
+	public String logout() {
+		return "login";
 	}
 }

@@ -14,19 +14,16 @@ import com.leveraon.springmvc.restful.config.interceptor.TransactionInterceptor;
 @EnableWebMvc
 @ComponentScan(basePackages = "com.leveraon.springmvc.restful")
 public class ApplicationConfiguration extends WebMvcConfigurerAdapter {
-	
+
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//		registry.addResourceHandler("/html/**").addResourceLocations("/html/");
-//		registry.addResourceHandler("/css/**").addResourceLocations("/css/");
-//		registry.addResourceHandler("/img/**").addResourceLocations("/img/");
-//		registry.addResourceHandler("/js/**").addResourceLocations("/js/");
-//		registry.addResourceHandler("/lib/**").addResourceLocations("/lib/");
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	}
+
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-	    registry.addInterceptor(new LoggingInterceptor());
-	    registry.addInterceptor(new TransactionInterceptor()).addPathPatterns("/user/*");
+		registry.addInterceptor(new LoggingInterceptor());
+		registry.addInterceptor(new TransactionInterceptor()).addPathPatterns("/user/*");
 	}
-	
+
 }
