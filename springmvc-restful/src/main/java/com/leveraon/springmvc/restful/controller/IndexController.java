@@ -10,7 +10,7 @@ public class IndexController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getIndexPage() {
-		return "index";
+		return "redirect:/sign-in";
 	}
 
 	@RequestMapping(value = "/sign-in", method = RequestMethod.GET)
